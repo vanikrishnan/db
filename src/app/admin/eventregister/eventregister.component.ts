@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {FormGroup, FormControl, Validators} from '@angular/forms';
 import { CustomValidator } from './customvalidator';
+import { IMultiSelectOption } from 'angular-2-dropdown-multiselect';
+// import $ = require("jquery");
 @Component({
   selector: 'app-eventregister',
   templateUrl: './eventregister.component.html',
@@ -12,9 +14,12 @@ export class EventregisterComponent implements OnInit {
   currentDate;
   eventregister;
   todaydate;
+  optionsModel: number[];
+  myOptions: IMultiSelectOption[];
   skills = ['java' , 'angular' , 'react' , 'nodeJS' ];
   location = ['chennai', 'hyderabadh' , 'pune' , 'Bangalore' ];
   constructor() {
+    // $('.selectpicker').selectpicker();
     const today = new Date();
     this.currentYear = today.getFullYear();
     this.currentMonth = today.getMonth() + 1;
@@ -40,6 +45,10 @@ export class EventregisterComponent implements OnInit {
    }
 
   ngOnInit() {
+    this.myOptions = [
+      { id: 1, name: 'Option 1' },
+      { id: 2, name: 'Option 2' },
+  ];
   }
   get eventname() {
     return this.eventregister.get('eventname');
