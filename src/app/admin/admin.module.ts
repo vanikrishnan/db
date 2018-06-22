@@ -5,6 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { route } from '../admin/routeevent';
 import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect';
+import { SkillmangementComponent } from './skillmangement/skillmangement.component';
 
 @NgModule({
   imports: [
@@ -13,6 +14,6 @@ import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect';
     MultiselectDropdownModule,
     RouterModule.forChild(route)
   ],
-  declarations: [EventregisterComponent]
+  declarations: [EventregisterComponent, SkillmangementComponent]
 })
 export class AdminModule { }

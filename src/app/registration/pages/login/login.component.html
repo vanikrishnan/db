@@ -1,0 +1,33 @@
+<div>
+<form [formGroup]="login">
+<div class='container' >
+<br>
+<br>
+<label >Username or email</label>
+<div class="inner-addon left-addon ">
+<i class="glyphicon glyphicon-user"></i>
+
+    <input type="text"class="form-control"  id="email" formControlName="email">
+    <div  class="alert alert-danger" *ngIf="login.get('email').touched && login.get('email').errors ">Please enter email address</div>
+
+
+</div>        
+
+<label >Password</label>
+
+<div class="inner-addon left-addon">
+<i class="glyphicon glyphicon-lock"></i>            
+<input type="text"class="form-control"  id="password" formControlName="password">
+    <div  class="alert alert-danger" *ngIf="login.get('password').touched && login.get('password').errors ">Please enter password</div>
+</div>
+<br><br>
+
+<div>
+    <button type="button" class="btn btn-success" id="submitting" [disabled]="login.invalid" (click)="addDetails()">submit</button>
+</div>
+
+
+</div>
+</form>
+</div>
+
