@@ -1,0 +1,24 @@
+.container
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgray;
+    height:27px;
+}
+.recent{
+    float: left;
+}
+
+#addicon
+{
+    float:right;
+    margin-right:10%;
+    font-size: 40px;
+}
+h4{
+    margin-left:7%;
+}
+h5{
+    margin-left:10%;
+    font-size:20px;
+}
