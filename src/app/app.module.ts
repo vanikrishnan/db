@@ -25,12 +25,14 @@ import { AdminModule } from './admin/admin.module';
 >>>>>>> 6a30c9b7b24774d03bdb7819c5d6749f2045aef4
 import { EventService } from './admin/event.service';
 import { HttpModule } from '@angular/http';
+import { InterviewerregistrationComponent } from './pages/landingpage/interviewerregistration/interviewerregistration.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    InterviewerregistrationComponent,
   ],
   imports: [
     BrowserModule,

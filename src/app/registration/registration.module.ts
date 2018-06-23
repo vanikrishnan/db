@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import {route} from './routes';
 import { LoginComponent } from './pages/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { InterviewerregistrationComponent } from './pages/interviewerregistration/interviewerregistration.component';
 import { AdminregistrationComponent } from "./pages/adminregistration/adminregistration.component";
 
 @NgModule({
@@ -14,6 +15,7 @@ import { AdminregistrationComponent } from "./pages/adminregistration/adminregis
     ReactiveFormsModule,
     RouterModule.forChild(route)
   ],
-  declarations: [LandingpageComponent, LoginComponent,AdminregistrationComponent]
+  declarations: [LandingpageComponent, LoginComponent, InterviewerregistrationComponent,AdminregistrationComponent]
+
 })
 export class RegistrationModule { }
