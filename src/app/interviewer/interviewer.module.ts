@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import {route} from './routes';
 @NgModule({
   imports: [
+  
     CommonModule,
     RouterModule.forChild(route)
   ],
