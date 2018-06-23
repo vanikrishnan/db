@@ -9,12 +9,14 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AdminModule } from './admin/admin.module';
 import { EventService } from './admin/event.service';
 import { HttpModule } from '@angular/http';
+import { InterviewerregistrationComponent } from './pages/landingpage/interviewerregistration/interviewerregistration.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    InterviewerregistrationComponent,
   ],
   imports: [
     BrowserModule,
