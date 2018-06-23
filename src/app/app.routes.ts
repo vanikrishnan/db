@@ -8,5 +8,9 @@ export const routes: Route[] = [
     {
       path: '',
       loadChildren: 'app/registration/registration.module#RegistrationModule'
+    },
+    {
+      path: 'interviewer',
+      loadChildren: 'app/interviewer/interviewer.module#InterviewerModule'
     }
 ];
