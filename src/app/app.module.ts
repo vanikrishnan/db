@@ -4,14 +4,6 @@ import {routes} from './app.routes';
 import { AppComponent } from './app.component';
 import { RegistrationModule } from './registration/registration.module';
 import { LandingpageComponent } from './registration/pages/landingpage/landingpage.component';
-<<<<<<< src/app/app.module.ts
-import { RouterModule , Routes} from '@angular/router';
-import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-
-import { AdminModule } from './admin/admin.module';
-import { environment } from '../environments/environment';
-=======
-
 import { RouterModule , Routes} from '@angular/router';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AdminModule } from './admin/admin.module';
