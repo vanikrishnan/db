@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormGroup, FormControl, Validators} from '@angular/forms';
-import {AngularFireDatabase } from 'angularfire2/database';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',

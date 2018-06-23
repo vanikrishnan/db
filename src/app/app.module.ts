@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { RegistrationModule } from './registration/registration.module';
 import { LandingpageComponent } from './registration/pages/landingpage/landingpage.component';
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 import { RouterModule , Routes} from '@angular/router';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
@@ -16,6 +17,8 @@ import { environment } from '../environments/environment';
 
 
 =======
+=======
+>>>>>>> 85910826ba0b285c07716497e61a5dbc591e0d1a
 import { RouterModule , Routes} from '@angular/router';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AdminModule } from './admin/admin.module';
