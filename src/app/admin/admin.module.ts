@@ -4,8 +4,12 @@ import { EventregisterComponent } from './eventregister/eventregister.component'
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { route } from '../admin/routeevent';
-import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect';
+
 import { SkillmangementComponent } from './skillmangement/skillmangement.component';
+
+import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
+import { EventService } from './event.service';
+
 
 @NgModule({
   imports: [
@@ -14,6 +18,9 @@ import { SkillmangementComponent } from './skillmangement/skillmangement.compone
     MultiselectDropdownModule,
     RouterModule.forChild(route)
   ],
-  declarations: [EventregisterComponent, SkillmangementComponent]
+
+  providers: [EventService],
+  declarations: [EventregisterComponent, AdmindashboardComponent,SkillmangementComponent]
+
 })
 export class AdminModule { }
