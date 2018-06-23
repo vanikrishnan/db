@@ -7,12 +7,34 @@ import { EventService } from '../event.service';
   styleUrls: ['./admindashboard.component.css']
 })
 export class AdmindashboardComponent implements OnInit {
-event;
+    event;
+    recentevents;
+    recentcontent;
+    upcomingevents;
+   today = new Date();
+   dd= this.today.getDate();
+   mm = this.today.getMonth() + 1; // since January is 0!
+   yyyy = this.today.getFullYear();
   constructor(public eventService: EventService) {
+    this.recentcontent=[];
     this.eventService.fetchData();
     this.event=this.eventService.data;
-    console.log(this.event);
-  } 
+    this.recentevents = this.eventService.recentevent;
+    this.upcomingevents=this.eventService.upcomingevent;
+    console.log('recent',this.recentevents);
+  
+    this.recentevents.sort(function(a,b){
+      return (new Date(a.eventDate).getTime())-(new Date(b.eventDate).getTime());
+    }) 
+    console.log(this.recentevents);
+    this.splitevents();
+  }
+ splitevents() {
+   for(var i=0;i<5;i++){
+     this.recentcontent.push(this.recentevents[i]);
+   }
+ }
+ 
 
   ngOnInit() {
     
