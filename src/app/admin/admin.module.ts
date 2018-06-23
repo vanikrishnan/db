@@ -15,7 +15,6 @@ import { EventService } from './event.service';
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    MultiselectDropdownModule,
     RouterModule.forChild(route)
   ],
 
