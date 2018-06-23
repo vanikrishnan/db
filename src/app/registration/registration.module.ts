@@ -11,8 +11,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule.forRoot(route)
-
+    RouterModule.forChild(route)
   ],
   declarations: [LandingpageComponent, LoginComponent]
 })
