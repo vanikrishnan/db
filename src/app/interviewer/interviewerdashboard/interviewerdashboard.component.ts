@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InterviewerdashboardComponent implements OnInit {
 
-  constructor() { }
+ 
+title;   
+
+constructor(){
+this.title = "hello";
+}
 
   ngOnInit() {
   }
