@@ -4,9 +4,7 @@ import { EventregisterComponent } from './eventregister/eventregister.component'
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { route } from '../admin/routeevent';
-
 import { SkillmangementComponent } from './skillmangement/skillmangement.component';
-
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
 import { EventService } from './event.service';
 
@@ -15,7 +13,6 @@ import { EventService } from './event.service';
   imports: [
     CommonModule,
     ReactiveFormsModule,
-  
     RouterModule.forChild(route)
   ],
 

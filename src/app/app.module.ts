@@ -7,15 +7,16 @@ import { LandingpageComponent } from './registration/pages/landingpage/landingpa
 import { RouterModule , Routes} from '@angular/router';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AdminModule } from './admin/admin.module';
-import { environment } from '../environments/environment';
 import { EventService } from './admin/event.service';
 import { HttpModule } from '@angular/http';
+import { InterviewerregistrationComponent } from './pages/landingpage/interviewerregistration/interviewerregistration.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    InterviewerregistrationComponent,
   ],
   imports: [
     BrowserModule,

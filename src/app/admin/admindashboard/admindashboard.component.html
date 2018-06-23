@@ -1,64 +1,47 @@
 <nav class="navbar navbar-light bg-light">
-        <div class="header">
-           <a routerLink="" class="home">iSlot</a>
-          <span class="componame">Admin Dashboard</span>
-          <span class="glyphicon glyphicon-option-vertical icon"></span>
-        </div>
-      </nav>
- <!-- <h4>Admin Dashboard</h4>
-
-<div class="container">
-    <div>iSlot</div>
-    <div>Dashboard</div>
-    <div>
-        <i class="	glyphicon glyphicon-option-vertical"> </i>
+    <div class="header">
+        <a routerLink="" class="home">iSlot</a>
+        <span class="componame">Admin Dashboard</span>
+        <span class="glyphicon glyphicon-option-vertical icon"></span>
     </div>
-</div> -->
+</nav>
+
 <div>
     <br>
-       <div > 
-           <h5> <b> Recent Events</b> </h5>
-           <i class='glyphicon glyphicon-plus-sign' id='addicon'></i>
+    <div>
+        <h5>
+            <b> Recent Events</b>
+        </h5>
+        <i class='glyphicon glyphicon-plus-sign' id='addicon'></i>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <span *ngFor="let event of recentevents">
+                <div class="col col-lg-3 tiles" [style.color]="event.isClosed=='true' ? 'red' : 'black'">
+                    <h4>{{event.eventName}}</h4>
+                </div>
+            </span>
         </div>
-        <br>
-        <br>
-        <div class="container">
-            <div class="row" >
-                <span *ngFor="let event of recentevents">  
-                    <div class="col col-lg-3 tiles" [style.color]="event.isClosed=='true' ? 'red' : 'black'" >
-                        <h4 >{{event.eventName}}</h4>
-                    </div>
-                    </span>
-            </div>
-        </div>
-       
+    </div>
 
-       <div > 
-            <h5> <b> upcoming events</b> </h5>
-          
-         </div> 
-       <div class="container">
-            <div class="row" >
-                <span *ngFor="let event of upcomingevents">  
-                    <div class="col col-lg-3 tiles" >
-                        <h4 >{{event.eventName}}</h4>
-                    </div>
-                    </span>
-            </div>
-        </div> 
-        
+
+    <div>
+        <h5>
+            <b> upcoming events</b>
+        </h5>
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <span *ngFor="let event of upcomingevents">
+                <div class="col col-lg-3 tiles">
+                    <h4>{{event.eventName}}</h4>
+                </div>
+            </span>
+        </div>
+    </div>
+
 </div>
-
-<!-- <div>
-    <h5>Upcoming Events</h5>
-</div> -->
-<!-- <div>
-        <br>
-           <div > 
-               <h5 > <b  class='upcoming'>Upcoming Events</b> </h5>
-              
-            </div>
-             <div>  </div>
-    </div> -->
-
 
