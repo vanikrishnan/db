@@ -4,6 +4,8 @@ import { EventregisterComponent } from './eventregister/eventregister.component'
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { route } from '../admin/routeevent';
+import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
+import { EventService } from './event.service';
 
 @NgModule({
   imports: [
@@ -11,6 +13,7 @@ import { route } from '../admin/routeevent';
     ReactiveFormsModule,
     RouterModule.forChild(route)
   ],
-  declarations: [EventregisterComponent]
+  providers: [EventService],
+  declarations: [EventregisterComponent, AdmindashboardComponent]
 })
 export class AdminModule { }

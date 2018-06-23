@@ -9,13 +9,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   imports: [
     CommonModule,
-<<<<<<< HEAD
     FormsModule,
     ReactiveFormsModule,
     RouterModule.forRoot(route)
-=======
-    RouterModule.forChild(route)
->>>>>>> 2ebf7701844fbba5668ed044a5f6848ba26c0d2f
+
   ],
   declarations: [LandingpageComponent, LoginComponent]
 })
