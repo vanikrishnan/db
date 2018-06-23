@@ -3,6 +3,7 @@ import { Http } from '@angular/http';
 
 @Injectable()
 export class EventService {
+<<<<<<< HEAD
   url = 'https://event-dashboard-2f231.firebaseio.com/Event dashboard.json';
   data;
   today = new Date();
@@ -19,6 +20,14 @@ export class EventService {
   }
 
   fetchData() {
+=======
+  url = 'https://event-dashboard-2f231.firebaseio.com/Eventdashboard.json';
+data;
+  constructor(private httpservice: Http) {
+   }
+
+   fetchData() {
+>>>>>>> 22ba2917a3e36f39405b0aa5d80709c02f2c52c5
     this.httpservice.get(this.url)
       .subscribe(rsp => {
         console.log(rsp.json());

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 import { EventenrollmentComponent } from './eventenrollment/eventenrollment.component';
 import { InterviewerdashboardComponent } from './interviewerdashboard/interviewerdashboard.component';
 import { RouterModule } from '@angular/router';
