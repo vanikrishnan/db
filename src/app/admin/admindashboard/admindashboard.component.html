@@ -1,47 +1,30 @@
-<nav class="navbar navbar-light bg-light">
-    <div class="header">
-        <a routerLink="" class="home">iSlot</a>
-        <span class="componame">Admin Dashboard</span>
-        <span class="glyphicon glyphicon-option-vertical icon"></span>
-    </div>
-</nav>
 
-<div>
-    <br>
+ <h4>Admin Dashboard</h4>
+
+<div class="container">
+    <div>iSlot</div>
+    <div>Dashboard</div>
     <div>
-        <h5>
-            <b> Recent Events</b>
-        </h5>
-        <i class='glyphicon glyphicon-plus-sign' id='addicon'></i>
-    </div>
-    <br>
-    <br>
-    <div class="container">
-        <div class="row">
-            <span *ngFor="let event of recentevents">
-                <div class="col col-lg-3 tiles" [style.color]="event.isClosed=='true' ? 'red' : 'black'">
-                    <h4>{{event.eventName}}</h4>
-                </div>
-            </span>
-        </div>
-    </div>
-
-
-    <div>
-        <h5>
-            <b> upcoming events</b>
-        </h5>
-
-    </div>
-    <div class="container">
-        <div class="row">
-            <span *ngFor="let event of upcomingevents">
-                <div class="col col-lg-3 tiles">
-                    <h4>{{event.eventName}}</h4>
-                </div>
-            </span>
-        </div>
+        <i class="	glyphicon glyphicon-option-vertical">
+        </i>
     </div>
 
 </div>
+<div>
+    <br>
+       <div class="recentevents"> 
+           <h5 class='recent'> <b> Recent Events</b> </h5>
+           <i class='glyphicon glyphicon-plus-sign' id='addicon'></i>
+        </div>
+         <div ></div>
+</div>
+<div>
+        <br>
+           <div class="upcomingevents"> 
+               <h5 class='upcoming'> <b>Upcoming Events</b> </h5>
+              
+            </div>
+             <div>  </div>
+    </div>
+
 
