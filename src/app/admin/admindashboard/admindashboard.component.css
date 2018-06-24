@@ -1,14 +1,16 @@
-.container
-{
-    display: flex;
-    justify-content: space-between;
-    background-color: lightgray;
-    height:27px;
-}
-.recent{
-    float: left;
-}
 
+.home{
+    font-size: 30px;
+    margin-left: 10px;
+}
+.componame{
+    font-size: 30px;
+    margin-left: 30%;
+}
+.icon{
+    font-size: 30px;
+    margin-left: 40%;
+}
 #addicon
 {
     float:right;
@@ -19,6 +21,16 @@ h4{
     margin-left:7%;
 }
 h5{
-    margin-left:10%;
+    margin-left: 30px;
     font-size:20px;
+    float: left;
+}
+row{
+    width: 100px;
+    height: 200px;
+}
+.tiles{
+    box-shadow: 2px 2px 2px 2px;
+    margin: 20px;
+    height: 40px;
 }
