@@ -1,0 +1,53 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <h3>iSlot</h3>
+    </div>
+    <div class="content">
+      <h3>iSlot for the month Febrauary 2018</h3>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li>
+        <button type="button" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-option-vertical"></span>
+        </button>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="month">
+  <div id="row">
+    <h5>Choose month</h5>
+  </div>
+  <select id="mon">
+    <option *ngFor="let i of list">{{i}} </option>
+  </select>
+</div>
+<div id="scoreboard">
+  <div class="text-center" id="skill">
+    <h3>javascript</h3>
+  </div>
+  <div id="score" class="text-center">
+    <div id="inner">
+      <h3>amir</h3>
+      <span class="glyphicon glyphicon-flash" id="icon"></span>
+      <span id="points">
+        <h3>120</h3>
+      </span>
+    </div>
+    <div id="inner">
+      <h3>amir</h3>
+      <span class="glyphicon glyphicon-flash" id="icon"></span>
+      <span id="points">
+        <h3>120</h3>
+      </span>
+    </div>
+    <div id="inner">
+      <h3>amir</h3>
+      <span class="glyphicon glyphicon-flash" id="icon"></span>
+      <span id="points">
+        <h3>120</h3>
+      </span>
+    </div>
+  </div>
+</div>

@@ -1,14 +1,14 @@
 import { EventenrollmentComponent } from './eventenrollment/eventenrollment.component';
 import { Routes } from '@angular/router';
-import {InterviewerdashboardComponent} from './interviewerdashboard/interviewerdashboard.component'
+import { InterviewerdashboardComponent } from './interviewerdashboard/interviewerdashboard.component'
 export const route: Routes = [
-    {
-      path: 'interviewerdashboard',
-      component: InterviewerdashboardComponent,
-    },
-    {
-      path: '',
-      component: EventenrollmentComponent,
+  {
+    path: 'eventenrollment',
+    component: EventenrollmentComponent,
+  },
+  {
+    path: '',
+    component: InterviewerdashboardComponent,
 
-    }
+  }
 ];

@@ -9,6 +9,7 @@ import { SkillmangementComponent } from './skillmangement/skillmangement.compone
 
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
 import { EventService } from './event.service';
+import { AnalysisComponent } from './analysis/analysis.component';
 
 
 @NgModule({
@@ -19,7 +20,7 @@ import { EventService } from './event.service';
   ],
 
   providers: [EventService],
-  declarations: [EventregisterComponent, AdmindashboardComponent,SkillmangementComponent]
+  declarations: [EventregisterComponent, AdmindashboardComponent,SkillmangementComponent, AnalysisComponent]
 
 })
 export class AdminModule { }
